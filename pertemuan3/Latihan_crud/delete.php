@@ -3,7 +3,7 @@
 include_once("config.php");
 
 //Mengambil id customer dari URL 
-$id = $ $_GET['id'];
+$id = $_GET['id'];
 
 //Men-delete customer dari tabel berdasarkan id yang diberikan 
 //$conn_db berasal dari config.php

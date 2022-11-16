@@ -1,7 +1,7 @@
 <?php
 //membuat koneksi ke database menggunakan file config.php dengan include_once
 include_once("config.php");
-//cek jika form sudah disubmit dan terdapat post dengan nama update, kemudian mengarahkan ke homepage ketika berhasil update
+//cek jika form sudah disubmit dan terdapat post dengan nama update,kemudian mengarahkan ke homepage ketika berhasil update
 if(isset($_POST['update']))
 {
     $id = $_POST['id'];
@@ -15,7 +15,7 @@ if(isset($_POST['update']))
     //update customer data
     //$conn_db berasal dari config.php
     $result = mysqli_query($conn_db, "UPDATE customers SET 
-    name='$name', email='$email', phone='$phone',updated='$updated' WHERE id=$id");
+    Nama ='$name', Email='$email', Phone='$phone',Updated='$updated' WHERE id=$id");
 
     //redirect ke homepage untuk menampilkan daftar customers yang telah di update
     if ($result){

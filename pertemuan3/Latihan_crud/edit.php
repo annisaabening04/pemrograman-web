@@ -14,9 +14,9 @@ if(!$result){
 
 while ($customer_data = mysqli_fetch_array($result))
 {
-    $name = $customer_data['name'];
-    $email = $customer_data['email'];
-    $phone = $customer_data['phone'];
+    $name = $customer_data['Nama'];
+    $email = $customer_data['Email'];
+    $phone = $customer_data['Phone'];
 }
 ?>
 <html>
@@ -28,7 +28,7 @@ while ($customer_data = mysqli_fetch_array($result))
         <a href="index.php">Home</a>
         <br/><br/>
 
-        <form name="update_user" method="post" action="edit_proses.php">
+        <form name="update_user" method="post" action="edit_process.php">
             <table border="0">
                 <tr>
                     <td> Name</td>
